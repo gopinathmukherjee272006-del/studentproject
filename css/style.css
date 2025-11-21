@@ -5,4 +5,15 @@ h1{
 h1 + h1 + h1{
   color:green;
 }
+ .firstDiv{
+   display: flex;
+ }
+
+.childDiv{
+  width:50%;
+  height:50%;
+  color:white;
+  background-color:red;
+  border:5px solid black;
+}
   
