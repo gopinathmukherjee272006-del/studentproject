@@ -18,8 +18,10 @@ h1 + h1 + h1{
   border:5px solid black;
   font-size:50px;
 }
-
-
+.childDiv:nth-of-type(2){
+  background-image: url("../Screenshot 2025-11-21 145322.png");
+  background-size:cover;
+}
 @media screen and (max-width:576px){
    .firstDiv{
      flex-direction: column;
