@@ -23,7 +23,7 @@ h1 + h1 + h1{
   background-image: url("../Screenshot 2025-11-21 145322.png");
   background-size:fit;
 }
- @media (max-width:576px){
+ @media (min-width:576px){
    .firstDiv{
      flex-direction:column;
    }
