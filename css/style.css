@@ -21,8 +21,6 @@ h1 + h1 + h1{
 .childDiv:nth-of-type(2){ 
   background-image: url("../Screenshot 2025-11-21 145322.png");
   background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 @media screen and (max-width:576px){
    .firstDiv{
