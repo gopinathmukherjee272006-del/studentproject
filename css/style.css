@@ -1,34 +1,5 @@
-h1{
-  color:red;
+.header {
+  width: 100%;
+  height:200px;
+  background-color:blue;
 }
-
-h1 + h1 + h1{
-  color:green;
-}
- .firstDiv{
-   display: flex;
-   height:100%;
- }
-
-.childDiv{
-  width:50%;
-  height:50%;
-  color:white;
-  background-color:red;
-  border:5px solid black;
-  font-size:50px;
-}
-.childDiv:nth-of-type(2){ 
-  background-image: url("../Screenshot 2025-11-21 145322.png");
-  background-size:cover;
-}
-@media screen and (max-width:576px){
-   .firstDiv{
-     flex-direction: column;
-      height: 100vh;
-   }
-
-   .childDiv{
-     width:100%;
-   }
- }
