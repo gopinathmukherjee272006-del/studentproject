@@ -1,16 +1,32 @@
 body {
-  margin:0;
+  margin: 0;
 }
 
+/* Header Styling */
 .header {
   width: 100%;
-  height:10%;
-  background-color:blue;
+  height: 10%;
+  background-color: blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media(max-width:576px) {
-  .header{ 
-    height:7%;
-    background-color:red;
+/* Logo Styling */
+.logo {
+  height: 80%;          /* Controls logo size */
+  object-fit: contain;  /* Keeps proportions correct */
+}
+
+/* Responsive Changes */
+@media (max-width: 576px) {
+  .header {
+    height: 7%;
+    background-color: red;
+  }
+
+  .logo {
+    height: 70%;        /* Smaller logo on small screens */
   }
 }
