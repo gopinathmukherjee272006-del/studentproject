@@ -2,70 +2,64 @@ body {
   margin: 0;
 }
 
-/* Header Styling */
+/* Header Section */
 .header {
   width: 100%;
-  height: 14%;          /* Medium header height */
+  height: 14%;
   background-color: blue;
 
   display: flex;
   align-items: center;
-  padding-left: 12px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
-/* Medium Circular Logo */
+/* Logo Styling (Medium Size) */
 .logo {
-  height: 50%;           /* Medium sized */
-  aspect-ratio: 1 / 1;   /* perfect circle */
-  border-radius: 50%;    /* circular shape */
-  object-fit: cover;     /* image fills circle */
+  height: 75%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* Responsive (mobile) */
-@media (max-width: 576px) {
-  .header {
-    height: 10%;         /* slightly smaller on phones */
-    background-color: red;
-  }
-
-  .logo {
-    height: 70%;         /* proportional medium logo */
-  }
-}
-body {
-  margin: 0;
-}
-
-/* Header section (bigger height for bigger logo) */
-.header {
-  width: 100%;
-  height: 18%;            /* Increased height */
-  background-color: blue;
-
+/* Navigation Menu */
+.nav {
   display: flex;
-  align-items: center;
-  padding-left: 15px;     /* space from left side */
-  box-sizing: border-box;
+  gap: 25px;
+  list-style: none;
+  margin-left: auto; /* pushes nav to right side */
 }
 
-/* BIG Circular Logo */
-.logo {
-  height: 50%;            /* Larger logo */
-  aspect-ratio: 1 / 1;    /* perfect circle base */
-  border-radius: 50%;     /* circle shape *6
-  object-fit: cover;      /* fills circle properly */
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
 }
 
-/* Mobile view adjustments */
+/* Hover Effect */
+.nav li a:hover {
+  color: yellow;
+}
+
+/* Mobile Responsive */
 @media (max-width: 576px) {
   .header {
-    height: 14%;          /* slightly smaller on mobile */
+    height: 10%;
     background-color: red;
-    padding-left: 12px;
+    padding-left: 10px;
   }
 
   .logo {
-    height: 85%;          /* proportional size in mobile */
+    height: 70%;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .nav li a {
+    font-size: 14px;
   }
 }
