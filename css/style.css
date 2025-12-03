@@ -10,24 +10,27 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: center;   /* This centers the nav */
+  position: relative;        /* Allows absolute positioning of the logo */
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-/* Logo Styling (Medium Size) */
+/* Logo (Left Corner) */
 .logo {
   height: 75%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
+  position: absolute;
+  left: 20px;                /* Fixes logo on the left */
 }
 
-/* Navigation Menu */
+/* Navigation Menu (Centered) */
 .nav {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
-  margin-left: auto; /* pushes nav to right side */
 }
 
 .nav li a {
@@ -48,11 +51,11 @@ body {
   .header {
     height: 10%;
     background-color: red;
-    padding-left: 10px;
   }
 
   .logo {
     height: 70%;
+    left: 10px;
   }
 
   .nav {
