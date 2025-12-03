@@ -16,9 +16,9 @@ body {
 
 /* BIG Circular Logo */
 .logo {
-  height: 90%;            /* Larger logo */
+  height: 50%;            /* Larger logo */
   aspect-ratio: 1 / 1;    /* perfect circle base */
-  border-radius: 50%;     /* circle shape */
+  border-radius: 50%;     /* circle shape *6
   object-fit: cover;      /* fills circle properly */
 }
 
