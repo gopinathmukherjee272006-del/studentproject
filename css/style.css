@@ -2,6 +2,41 @@ body {
   margin: 0;
 }
 
+/* Header Styling */
+.header {
+  width: 100%;
+  height: 14%;          /* Medium header height */
+  background-color: blue;
+
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+/* Medium Circular Logo */
+.logo {
+  height: 75%;           /* Medium sized */
+  aspect-ratio: 1 / 1;   /* perfect circle */
+  border-radius: 50%;    /* circular shape */
+  object-fit: cover;     /* image fills circle */
+}
+
+/* Responsive (mobile) */
+@media (max-width: 576px) {
+  .header {
+    height: 10%;         /* slightly smaller on phones */
+    background-color: red;
+  }
+
+  .logo {
+    height: 70%;         /* proportional medium logo */
+  }
+}
+body {
+  margin: 0;
+}
+
 /* Header section (bigger height for bigger logo) */
 .header {
   width: 100%;
