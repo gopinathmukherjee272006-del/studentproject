@@ -18,7 +18,7 @@ body {
 
 /* Logo (Left Corner) */
 .logo {
-  height: 75%;
+  height: 70%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
