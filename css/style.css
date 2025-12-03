@@ -16,7 +16,7 @@ body {
 
 /* Medium Circular Logo */
 .logo {
-  height: 75%;           /* Medium sized */
+  height: 50%;           /* Medium sized */
   aspect-ratio: 1 / 1;   /* perfect circle */
   border-radius: 50%;    /* circular shape */
   object-fit: cover;     /* image fills circle */
