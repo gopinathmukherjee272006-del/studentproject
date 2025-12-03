@@ -9,7 +9,7 @@ body {
 }
 
 @media(max-width:576px) {
-  .header{
+  .header{ 
     height:7%;
     background-color:red;
   }
