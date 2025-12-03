@@ -9,7 +9,7 @@
 }
 .logo{
   width:25%;
-  background-color:red;
+  background-color:gray;
 }
 .logo a{
   width:100%;
@@ -23,7 +23,7 @@
 }
 .menu{
   width:75%;
-  background-color:green;
+  background-color:black;
   display:flex;
 }
 .menu .menubar{
