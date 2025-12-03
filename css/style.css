@@ -2,35 +2,35 @@ body {
   margin: 0;
 }
 
-/* Header section */
+/* Header section (bigger height for bigger logo) */
 .header {
   width: 100%;
-  height: 10%;
+  height: 18%;            /* Increased height */
   background-color: blue;
 
   display: flex;
   align-items: center;
-  padding-left: 10px;     /* position logo in corner */
+  padding-left: 15px;     /* space from left side */
   box-sizing: border-box;
 }
 
-/* Circular Logo */
+/* BIG Circular Logo */
 .logo {
-  height: 80%;            /* fits inside header */
-  aspect-ratio: 1 / 1;    /* perfect square */
+  height: 90%;            /* Larger logo */
+  aspect-ratio: 1 / 1;    /* perfect circle base */
   border-radius: 50%;     /* circle shape */
   object-fit: cover;      /* fills circle properly */
 }
 
-/* Responsive view (mobile) */
+/* Mobile view adjustments */
 @media (max-width: 576px) {
   .header {
-    height: 7%;
+    height: 14%;          /* slightly smaller on mobile */
     background-color: red;
-    padding-left: 8px;
+    padding-left: 12px;
   }
 
   .logo {
-    height: 70%;
+    height: 85%;          /* proportional size in mobile */
   }
 }
