@@ -1,62 +1,66 @@
-*{
+body {
   margin:0;
-  padding:0;
 }
 
-/* HEADER */
-.header{ 
-  height:10vh;
-  width:100%;
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: blue;
+  display:flex;  
+  overflow:hidden;
+}
+
+.logo {
+  width: 25%;
+  background-color: green;
+}
+
+.logo a {
+  width: 100%;
+  height: 100%;
   display:flex;
-}
-
-/* LOGO (Smaller Size) */
-.logo{
-  width:25%;        /* ↓ Reduced from 25% to 12% */
-  background-color:gray;
-  display: flex; 
-}
-
-.logo a{
-  display:flex;
-  width:100%;
-  height:100%;
   justify-content: center;
 }
 
 .logo a img {
-height:auto;
-width:auto;  
+  width: auto;
+  height: auto;
 }
 
-/* MENU */
-.menu{
-  width:75%;/* Adjust because logo is now 12% */
-  background-color:black;
-  display:flex;
+.menu {
+  width: 75%;
+  background-color: aqua;
+  text-color:white;
+  display: flex;
 }
 
-.menu .menubar{
-  width:100%;
-  height:100%;
+.navbar {
+  width: 100%;
+  position: relative;
 }
 
-.menu .menubar ul{
-  display:flex;
-  height:100%;
-  width:100%;
-  align-items:center;
-  justify-content:space-around;
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-around;
+  position: relative; 
 }
 
-.menu .menubar ul li{
-  list-style-type:none;
-  padding-bottom:2.5%;
-}
-
-.menu .menubar ul li a{
+.navbar ul li a{
   text-decoration:none;
-  color:white;
-  font-size:1.5vw; 
-  position:absolute;   /* FIX: removed absolute because it breaks layout */
+  color: black;
+  font-size:min(1.5vw,1.5vw);
+  position: absolute;
+}
+
+.mobilebar {
+  width: 0;
+}
+
+@media (max-width:576px) {
+  .header {
+    height: 7%;
+    background-color: red;
+  }
 }
