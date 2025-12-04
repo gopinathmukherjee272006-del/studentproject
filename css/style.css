@@ -10,7 +10,7 @@
 }
 
 .logo {
-  width: 30%;           /* Increased logo area */
+  width: 40%;           /* Increased logo area */
   background-color: black;
   display: flex;
 }
