@@ -2,50 +2,67 @@
   margin:0;
   padding:0;
 }
+
+/* HEADER */
 .header{ 
   height:10vh;
   width:100%;
   display:flex;
+  align-items:center;
 }
+
+/* LOGO (Smaller Size) */
 .logo{
-  width:25%;
-  height:100%;
-  background-color:gray;
-}
-.logo a{
-  width:100%;
+  width:12%;        /* ↓ Reduced from 25% to 12% */
   height:100%;
   display:flex;
   justify-content:center;
- }
- .logo a img {
-  height:auto;
-  width:auto;
+  align-items:center;
+  background-color:gray;
 }
+
+.logo a{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+
+.logo a img {
+  width:70%;        /* Adjust image size */
+  height:auto;
+  object-fit:contain;
+}
+
+/* MENU */
 .menu{
-  width:75%;
+  width:88%;        /* Adjust because logo is now 12% */
   background-color:black;
   display:flex;
 }
+
 .menu .menubar{
   width:100%;
   height:100%;
 }
+
 .menu .menubar ul{
   display:flex;
   height:100%;
   width:100%;
   align-items:center;
   justify-content:space-around;
-  }
+}
+
 .menu ul li{
   list-style-type:none;
   padding-bottom:2.5%;
 }
+
 .menu ul li a{
   text-decoration:none;
   color:white;
   font-size:1.5vw; 
-  position:absolute;
+  position:relative;   /* FIX: removed absolute because it breaks layout */
 }
-
