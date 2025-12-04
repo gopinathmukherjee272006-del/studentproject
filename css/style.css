@@ -18,7 +18,6 @@
 .logo a {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -26,6 +25,7 @@
 .logo a img {
   width: auto;           /* Makes logo larger */
   height: auto;
+   align-items: center;
 }
 
 .menu {
