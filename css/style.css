@@ -8,36 +8,30 @@
   height:10vh;
   width:100%;
   display:flex;
-  align-items:center;
 }
 
 /* LOGO (Smaller Size) */
 .logo{
-  width:12%;        /* ↓ Reduced from 25% to 12% */
-  height:100%;
+  width:25%;        /* ↓ Reduced from 25% to 12% */
   display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color:gray;
+  background-color:blue;
 }
 
 .logo a{
   display:flex;
   justify-content:center;
-  align-items:center;
   width:100%;
   height:100%;
 }
 
 .logo a img {
-  width:50%;        /* Adjust image size */
-  height:auto;
-  object-fit:contain;
+height:auto;
+width:auto;  
 }
 
 /* MENU */
 .menu{
-  width:88%;        /* Adjust because logo is now 12% */
+  width:75%;/* Adjust because logo is now 12% */
   background-color:black;
   display:flex;
 }
@@ -55,14 +49,14 @@
   justify-content:space-around;
 }
 
-.menu ul li{
+.menu .menubar ul li{
   list-style-type:none;
   padding-bottom:2.5%;
 }
 
-.menu ul li a{
+.menu .menubar ul li a{
   text-decoration:none;
   color:white;
   font-size:1.5vw; 
-  position:relative;   /* FIX: removed absolute because it breaks layout */
+  position:absolute;   /* FIX: removed absolute because it breaks layout */
 }
