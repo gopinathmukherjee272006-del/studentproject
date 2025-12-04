@@ -5,7 +5,6 @@
 .header{
   height:10vh;
   width:100%;
-  background-color:black;
   display:flex;
 }
 .logo{
@@ -25,7 +24,7 @@
 }
 .menu{
   width:75%;
-  background-color:aqua;
+  background-color:black;
   display:flex;
 }
 .menu .menubar{
