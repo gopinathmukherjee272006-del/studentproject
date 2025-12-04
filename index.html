@@ -1,21 +1,25 @@
-<html>
-  <head>
-    <title> this is my first project</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
-  </head>
-  <body>
-    <div id="callMenu"></div>
-    <script>
-      fetch("header.html")
-        .then(response=>response.text())
-        .then(data=>{
-          document.getElementById("callMenu")
-          .innerHTML=data;
+    <title>My First Project</title>
+</head>
+
+<body>
+
+<div id="callMenu"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("callMenu").innerHTML = data;
         });
-    </script>
-    <h1>Hello i am index.html</h1>
-    
-   </body>
- </html>
+</script>
+
+<h1>Hello, I am index.html</h1>
+
+</body>
+</html>
