@@ -13,6 +13,7 @@
   width: 30%;           /* Increased logo area */
   background-color: black;
   display: flex;
+  align-items: center;
 }
 
 .logo a {
