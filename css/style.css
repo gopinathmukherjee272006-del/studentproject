@@ -30,7 +30,7 @@
 }
 
 .logo a img {
-  width:70%;        /* Adjust image size */
+  width:50%;        /* Adjust image size */
   height:auto;
   object-fit:contain;
 }
