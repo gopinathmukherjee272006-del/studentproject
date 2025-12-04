@@ -1,49 +1,60 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.header{
-  height:10%;
-  width:100%;
-  display:flex;
+
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
 }
-.logo{
-  width:25%;
-  background-color:black;
+
+.logo {
+  width: 30%;           /* Increased logo area */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo a{
-  width:100%;
-  height:100%;
-  display:flex;
-  justify-content:center;
- }
- .logo a img {
-  height:auto;
-  width:auto;
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.menu{
-  width:75%;
-  background-colorgray;
-  display:flex;
+
+.logo a img {
+  width: 80%;           /* Makes logo larger */
+  height: auto;
 }
-.menu .menubar{
-  width:100%;
-  height:100%;
+
+.menu {
+  width: 70%;
+  background-color: gray;
+  display: flex;
 }
-.menu .menubar ul{
-  display:flex;
-  height:100%;
-  width:100%;
-  align-items:center;
-  justify-content:space-around;
-  }
-.menu menubar ul li{
-  list-style-type:none;
-  padding-bottom:2.5%;
+
+.menu .menubar {
+  width: 100%;
+  height: 100%;
 }
-.menu menubar ul li a{
-  text-decoration:none;
-  color:black;
-  font-size:1.5vw; 
-  position:absolute;
+
+.menu .menubar ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu .menubar ul li {
+  list-style-type: none;
+}
+
+.menu .menubar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
 }
