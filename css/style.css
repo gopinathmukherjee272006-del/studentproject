@@ -26,7 +26,7 @@
 }
 
 .logo a img {
-  width: 80%;           /* Makes logo larger */
+  width: auto;           /* Makes logo larger */
   height: auto;
 }
 
