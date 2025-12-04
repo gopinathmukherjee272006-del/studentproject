@@ -8,8 +8,8 @@
   display:flex;
 }
 .logo{
-  width:25%;
-  height:100%;
+  width:25vh;
+  height:100vh;
   background-color:gray;
 }
 .logo a{
