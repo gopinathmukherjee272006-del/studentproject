@@ -1,22 +1,15 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
 }
-
-/* HEADER */
-.header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height:10%;
+.header{ 
+  height:10%;
+  width:100%;
+  display:flex;
 }
-
-/* LOGO */
-.logo {
-    width: 25%;
-    background-color:gray;
+.logo{
+  width:25%;
+  background-color:gray;
 }
 .logo a{
   width:100%;
@@ -24,25 +17,19 @@
   display:flex;
   justify-content:center;
  }
-
-.logo img {
-    width: auto;
-    height: auto;
+ .logo a img {
+  height:auto;
+  width:auto;
 }
-
-/* MENU */
-.menu {
-  width: 75%;
+.menu{
+  width:75%;
   background-color:black;
   display:flex;
 }
-
 .menu .menubar{
   width:100%;
   height:100%;
 }
-
-
 .menu .menubar ul{
   display:flex;
   height:100%;
@@ -54,9 +41,10 @@
   list-style-type:none;
   padding-bottom:2.5%;
 }
-
-
-/* Hover Effect */
-.menubar li a:hover {
-    color: yellow;
+.menu ul li a{
+  text-decoration:none;
+  color:white;
+  font-size:1.5vw; 
+  position:absolute;
 }
+
