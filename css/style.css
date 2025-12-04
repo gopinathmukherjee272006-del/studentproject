@@ -13,7 +13,6 @@
 /* LOGO (Smaller Size) */
 .logo{
   width:25%;        /* ↓ Reduced from 25% to 12% */
-  display:flex;
   background-color:gray;
 }
 
