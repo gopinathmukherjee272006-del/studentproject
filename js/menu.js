@@ -20,6 +20,15 @@ fetch("header.html")
         if (linkPage == currentPage) {
       		link.closest("li").classList.add("underline_current");
     	} 
+
+		if(window.innerWidth <=576){
+           const menu=document.querySelector(".menu");
+		   const menu=document.querySelector(".menu .menubar");
+		   const menu=document.querySelector(".menu .mobilebar");
+
+			if(mobileBar && !mobileBar.querySelector(".hamburger")){
+			}
+		}
 	});
 
 }) // end then
