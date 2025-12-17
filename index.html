@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>This is college website build during training programe of the students</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>My First Project</title>
-</head>
-
-<body>
-
-<div id="callMenu"></div>
-
-<script>
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("callMenu").innerHTML = data;
-        });
-</script>
-
-<h1>Hello, I am index.html</h1>
-
-</body>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+  </body>
 </html>
