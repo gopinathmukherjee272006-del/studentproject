@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,56 +6,183 @@
 
 .header {
   width: 100%;
-  height: 10vh;
-  display: flex;
+  height: 10%;
+  background-color: red;
+  display:flex;
 }
 
 .logo {
-  width: 40%;           /* Increased logo area */
-  background-color: black;
-  display: flex;
+  width: 25%;
+  height: 100%;
+  background-color: blue;
 }
 
 .logo a {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
 }
 
 .logo a img {
-  width: auto;           /* Makes logo larger */
+  width: auto;
   height: auto;
-   align-items: center;
 }
 
 .menu {
-  width: 70%;
-  background-color: gray;
-  display: flex;
+  width: 75%;
+  height: 100%;
+  background-color: green;
 }
 
 .menu .menubar {
-  width: 100%;
   height: 100%;
+  width: 100%; 
 }
 
 .menu .menubar ul {
-  display: flex;
+  width: 90%;
   height: 100%;
-  width: 100%;
-  align-items: center;
+  display:flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.menu .menubar ul li {
-  list-style-type: none;
-  padding-bottom:2.5%;
+.menubar ul li {
+  position: relative;
+  list-style: none;
+  height: 100%;  
+  display: flex;
+  align-items: center;
 }
 
-.menu .menubar ul li a {
+.menubar ul li a {
   text-decoration: none;
-  color: black;
+  color: magenta;
   font-size: 1.5vw;
-  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: static !important;
 }
+
+.menu .mobilebar {
+  height: 100%;
+  width: 0%;
+}
+
+.menu .menubar ul li .submenu {
+  display: none;
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: magenta;
+  border: 1px solid black;
+  width: 200px;
+  height: auto;
+  flex-direction:column;
+  padding:5px 0;
+  z-index: 10;
+}
+
+.menu .menubar ul li .submenu li{
+  list-style: none;
+  padding: 8px 5%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.menu .menubar ul li .submenu li a{
+  font-size:1vw;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+  /* position: absolute; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .menubar ul li:hover .submenu {
+  display: block;
+}
+
+.menu .menubar ul .underline_current > a {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 5%;
+    background: white;
+  }
+
+  .header .logo {
+    width: 80%;
+    background-color: white;
+  }
+
+  .header .logo a {
+    width: 50%;
+    background-color: white;
+    justify-content: none;
+    padding-left: 20%;
+  }
+
+  .header .menu {
+    width: 20%;
+    background-color: white;
+  }
+
+  .header .menu .menubar{
+    width: 0%;
+    height: 0%;
+  }
+
+  .header .menu .mobilebar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header .menu .mobilebar .hamburger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background:green;
+  }
+
+  .header .menu .mobilebar .hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 7px 0 white, 0 -7px 0 white;
+  }
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        
