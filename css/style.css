@@ -8,14 +8,14 @@
 .header {
   width: 100%;
   height: 10%;
-  background-color: red;
+  background-color: black;
   display:flex;
 }
 
 .logo {
   width: 25%;
   height: 100%;
-  background-color: blue;
+  background-color: brown;
 }
 
 .logo a {
@@ -33,7 +33,7 @@
 .menu {
   width: 75%;
   height: 100%;
-  background-color: green;
+  background-color: gray;
 }
 
 .menu .menubar {
