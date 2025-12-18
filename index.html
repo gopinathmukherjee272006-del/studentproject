@@ -1,33 +1,13 @@
 
 <html>
   <head>
-    <title>Project</title>
+    <title>This is college website build during training programe of the students</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
-    <div id="nav"></div>
-    <script>
-      fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
-
-        let currentpage = window.location.pathname.split("/").pop();
-        let links = document.querySelectorAll(".menu .menubar ul li a");
-        if(!currentpage  || currentpage == "#"){
-          currentpage ="index.html";
-        }
-        links.forEach(link=> {
-          console.log("current page:",currentpage);
-          let linkpage = link.getAttribute("href");
-          if (linkpage == currentpage){
-          link.closest("li").classList.add("underline_current");
-          }
-      });
-        });
-     
-    </script>
+    <div id="header"></div>
   </body>
 </html>
-     
+
