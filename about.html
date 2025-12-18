@@ -1,39 +1,35 @@
 
+
 <html>
   <head>
-    <title>About</title>
+    <title>Project</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
   <body>
-    <div id="header">
-      
-    </div>
+    <div id="nav"></div>
     <script>
-      fetch("header.html")
+      fetch("navbar.html")
       .then(res => res.text())
       .then(data => {
-        document.getElementById("header").innerHTML = data;
-        
-        let currentPage = window.location.pathname.split("/").pop();
-        // menu me anchor tak pahuchne ka tareeka
+        document.getElementById("nav").innerHTML = data;
+
+        let currentpage = window.location.pathname.split("/").pop();
         let links = document.querySelectorAll(".menu .menubar ul li a");
-        
-        // hr anchor tag ko process karenge
-        links.forEach(link => {
-          console.log("Current page:", currentPage);
-          //pehle  anchor tag ka href ki value save karenge
-          let linkPage = link.getAttribute("href");
-          console.log("Attribute Value: " , linkPage);
-          if(!linkPage) return;
-  
-          if (linkPage == currentPage) {
-            link.closest("li").classList.add("underline_current");
-          } 
-        });
-      
+        if(!currentpage  || currentpage == "#"){
+          currentpage ="index.html";
+        }
+        links.forEach(link=> {
+          console.log("current page:",currentpage);
+          let linkpage = link.getAttribute("href");
+          if (linkpage == currentpage){
+          link.closest("li").classList.add("underline_current");
+          }
       });
+        });
+     
     </script>
   </body>
 </html>
+     
 
