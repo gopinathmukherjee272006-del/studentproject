@@ -1,35 +1,57 @@
 
+let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
 
+const products = [
+  {id:1, name:"Classic T‑Shirt", price:25, category:"T‑Shirts", image:"https://via.placeholder.com/400"},
+  {id:2, name:"Denim Jacket", price:60, category:"Jackets", image:"https://via.placeholder.com/400"},
+  {id:3, name:"Slim Fit Jeans", price:45, category:"Jeans", image:"https://via.placeholder.com/400"},
+  {id:4, name:"Warm Hoodie", price:40, category:"Hoodies", image:"https://via.placeholder.com/400"}
+];
 
-<html>
-  <head>
-    <title>Project</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  </head>
-  <body>
-    <div id="nav"></div>
-    <script>
-      fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
+const productList = document.getElementById("productList");
+const searchInput = document.getElementById("searchInput");
+const categorySelect = document.getElementById("categorySelect");
+const cartCount = document.getElementById("cartCount");
 
-        let currentpage = window.location.pathname.split("/").pop();
-        let links = document.querySelectorAll(".menu .menubar ul li a");
-        if(!currentpage  || currentpage == "#"){
-          currentpage ="index.html";
-        }
-        links.forEach(link=> {
-          console.log("current page:",currentpage);
-          let linkpage = link.getAttribute("href");
-          if (linkpage == currentpage){
-          link.closest("li").classList.add("underline_current");
-          }
-      });
-        });
-     
-    </script>
-  </body>
-</html>
-     
+function saveCart() {
+  localStorage.setItem("cartItems", JSON.stringify(cart));
+  cartCount.innerText = cart.length;
+}
+
+function addToCart(id) {
+  const product = products.find(p => p.id === id);
+  cart.push(product);
+  saveCart();
+}
+
+function renderProducts(items) {
+  productList.innerHTML = "";
+  items.forEach(p => {
+    productList.innerHTML += `
+    <div class="product">
+      <img src="${p.image}">
+      <h3>${p.name}</h3>
+      <p>$${p.price}</p>
+      <button onclick="addToCart(${p.id})">Add to Cart</button>
+    </div>`;
+  });
+}
+
+function filterProducts() {
+  const text = searchInput.value.toLowerCase();
+  const category = categorySelect.value;
+
+  const filtered = products.filter(p => {
+    const matchCat = category === "All" || p.category === category;
+    const matchText = p.name.toLowerCase().includes(text);
+    return matchCat && matchText;
+  });
+
+  renderProducts(filtered);
+}
+
+searchInput.addEventListener("keyup", filterProducts);
+categorySelect.addEventListener("change", filterProducts);
+
+cartCount.innerText = cart.length;
+renderProducts(products);
